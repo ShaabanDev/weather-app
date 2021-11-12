@@ -8,14 +8,14 @@ const forecast = require("./utils/forecast");
 //
 
 // calling geocode to get the the coordinates of specific area
-process.argv[2]?geocode(process.argv[2], (data, error) => {
+process.argv[2]?geocode(process.argv[2], ({longitude,latitude,location}={}, error) => {
   if (error) {
     return console.log(error);
   }
   // passing the the coordinates to the forecast function
-  forecast(data.longitude, data.latitude, (response, lError, bError) => {
+  forecast(longitude,latitude, (response, lError, bError) => {
     if (response) {
-      console.log(data.location);
+      console.log(location);
       console.log(response);
     } else if (lError) {
       console.log(lError);
