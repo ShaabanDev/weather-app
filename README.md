@@ -11,7 +11,7 @@ To get the Node server running locally:
 - ``npm run dev`` to start the local server
 
 ## Brief
-The App link on heroku [Weather](https://hussein-weather-app.herokuapp.com/ "Weather App")
+The App link on heroku [Weather](https://complete-weather-app.herokuapp.com/ "Weather App")
 
 The App depends on two websites that provide us free forecast API.
 
